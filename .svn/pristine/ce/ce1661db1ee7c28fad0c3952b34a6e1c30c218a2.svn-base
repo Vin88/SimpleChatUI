@@ -1,0 +1,1 @@
+"use strict";function MainCtrl(a,b,c,d){var e=c.isAuthenticate;a.userName=c.userName,e||b.go("login"),a.name="saurabh",a.checkPalindron=function(a){for(var b=a.length,c=0;c<Math.floor(b/2);c++)if(a[c]!==a[b-1-c])return!1;return!0}}angular.module("portalSeedApp").controller("MainCtrl",MainCtrl),MainCtrl.$inject=["$scope","$state","$sessionStorage","$rootScope"];

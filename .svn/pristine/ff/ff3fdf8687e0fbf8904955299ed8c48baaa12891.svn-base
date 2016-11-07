@@ -1,0 +1,11 @@
+<div class="wrapper" ng-controller="loginCtrl">
+    <form class="form-signin" name="loginForm">
+      <h2 class="form-signin-heading">Please login</h2>
+      <input type="email" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" ng-model="emailId"/>
+      <input type="password" class="form-control" name="password" placeholder="Password" required="" ng-model="password"/>
+      <label class="checkbox">
+        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me{{message}}
+      </label>
+      <button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="login()" ng-disabled="loginForm.$invalid">Login</button>
+    </form>
+  </div>

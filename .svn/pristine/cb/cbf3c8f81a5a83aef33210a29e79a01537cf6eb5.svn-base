@@ -1,0 +1,1 @@
+"use strict";function LoginSvc(a){function b(){var b="data/info.json";return a.get(b).then(function(a){return a.data},function(a){return eroor.data})}var c={login:b};return c}angular.module("portalSeedApp").factory("LoginSvc",LoginSvc),LoginSvc.$inject=["$http"];
